@@ -1,0 +1,193 @@
+body {
+    background: linear-gradient(to bottom, #cb538f, #ffb3b3, #ee2f2f);
+    
+     
+    
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.emoji {
+    position: absolute;
+    font-size: 24px; /* Emoji boyutu */
+    pointer-events: none; /* Emojilerin tıklanabilir olmaması için */
+}
+
+.emoji:nth-child(odd) {
+    color: #ff69b4; /* Emoji rengi */
+}
+
+.emoji:nth-child(even) {
+    color: #ff1493; /* Emoji rengi */
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+.bar-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px; 
+    border: 8px solid #c81da8;
+}
+.navbar a {
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 68, 143);
+    text-align: center;
+   
+    text-decoration: none;
+    
+}
+.navbar a:hover {
+    font-size: 26px;
+    font-weight: 600;
+    color: #980983;
+    text-align: center;
+   
+    text-decoration: none;
+    background-color: rgb(179, 31, 127);
+    
+    
+}
+.write {
+    max-width: 600px; /* Maksimum genişlik (istenen genişliği ayarlayın) */
+    margin: 0 auto; /* Yatayda merkezler */
+    padding: 20px; /* Kenar boşlukları (isteğe bağlı) */
+    background-color: #e862d4; /* Arka plan rengi (isteğe bağlı) */
+    border-radius: 8px; /* Kenar yuvarlama (isteğe bağlı) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge (isteğe bağlı) */
+}
+
+.write p {
+    text-align: center; /* Metni merkezler */
+    margin: 0; /* Kenar boşluklarını sıfırlar */
+    line-height: 1.6; /* Satır yüksekliği (isteğe bağlı) */
+}
+.btn {
+    background-color: #ff69b4; /* Arka plan rengi */
+    border: none; /* Kenarlık yok */
+    color: white; /* Yazı rengi */
+    padding: 15px 25px; /* İç boşluk */
+    text-align: center; /* Metni ortalar */
+    text-decoration: none; /* Alt çizgi yok */
+    display: inline-block; /* Satır içi blok */
+    font-size: 16px; /* Yazı boyutu */
+    margin: 10px; /* Dış boşluk */
+    cursor: pointer; /* İmleci pointer yapar */
+    border-radius: 8px; /* Kenar yuvarlama */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölge */
+    transition: background-color 0.3s, transform 0.3s; /* Geçiş efektleri */
+}
+
+.btn:hover {
+    background-color: #ff1493; /* Hover rengi */
+    transform: scale(1.05); /* Hover efekt */
+}
+
+.btn:active {
+    background-color: #e6007e; /* Tıklama rengi */
+    transform: scale(0.95); /* Tıklama efekti */
+}
+.yazım{
+    color: #980983;
+    text-shadow:1px 1px 15px rgb(240, 238, 239);
+  
+    text-align: center;
+     font-family: Roboto;
+  
+    
+}
+.anı1{
+    color: #3a1935;
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    
+}
+.memoryimage {
+    text-align: center; /* Yazıyı ve resmi ortalar */
+    max-width: 100%; /* Resmin taşmasını engeller */
+}
+
+.memoryimage img {
+    width: 500px;
+   
+    height: auto; /* Resmin yüksekliğini orantılı tutar */
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.memoryimage .anı1p {
+    font-size: 1.2em; /* Yazı boyutunu ayarlar, ihtiyaca göre değiştirebilirsiniz */
+    margin-top: 10px; /* Yazının resimden biraz aşağıda olmasını sağlar */
+    color: aliceblue;
+}
+#message {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(143, 79, 135);
+    border: 5px solid #000000;
+    margin: 30px;
+    width: 400px;
+}
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(1); /* Başlangıç ve bitişte orijinal boyut */
+    }
+    50% {
+        transform: scale(1.5); /* Orta noktada 1.5 kat büyür */
+    }
+}
+
+.container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    animation: growShrink 2s infinite; /* 2 saniyede bir döngü, sonsuz */
+}
+@keyframes growShrink2 {
+    0%, 100% {
+        transform: scale(1); /* Başlangıç ve bitişte orijinal boyut */
+    }
+    50% {
+        transform: scale(1.2); /* Orta noktada 1.5 kat büyür */
+    }
+}
+
+.navbar {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    animation: growShrink2 2s infinite; /* 2 saniyede bir döngü, sonsuz */
+}
